@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">MD_Ejercicio17</string>
+    <string name="app_name">MD_DatePicker</string>
+    <string name="the_date_you_picked_will_show_here">The date you picked will show here</string>
+    <string name="pick_date">PICK DATE</string>
 </resources>
