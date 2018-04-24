@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
                 datePickerDialog.setTitle("Date Picker");
 
+                datePickerDialog.setThemeDark(true);
 
 
                 datePickerDialog.show(getFragmentManager(),"datePickerID");
