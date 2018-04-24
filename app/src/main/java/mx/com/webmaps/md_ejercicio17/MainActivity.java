@@ -45,9 +45,13 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
                 datePickerDialog.setThemeDark(false);
 
+                datePickerDialog.dismissOnPause(false);  // false -> al minimizar ventana y regresar el datepicker sigue abierto, true-> cierra el datepicker cuando cambia de ventana
+
                 datePickerDialog.setOkText("SET");
 
                 datePickerDialog.setCancelText("DON'T SET");
+
+                datePickerDialog.showYearPickerFirst(true);
 
                 datePickerDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
                     @Override
