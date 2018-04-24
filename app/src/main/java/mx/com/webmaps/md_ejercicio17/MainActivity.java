@@ -1,5 +1,6 @@
 package mx.com.webmaps.md_ejercicio17;
 
+import android.content.DialogInterface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.AppCompatButton;
@@ -42,11 +43,18 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
                 datePickerDialog.setTitle("Date Picker");
 
-                datePickerDialog.setThemeDark(true);
+                datePickerDialog.setThemeDark(false);
 
                 datePickerDialog.setOkText("SET");
 
                 datePickerDialog.setCancelText("DON'T SET");
+
+                datePickerDialog.setOnCancelListener(new DialogInterface.OnCancelListener() {
+                    @Override
+                    public void onCancel(DialogInterface dialog) {
+                        System.out.println("Cancel");
+                    }
+                });
 
 
                 datePickerDialog.show(getFragmentManager(),"datePickerID");
