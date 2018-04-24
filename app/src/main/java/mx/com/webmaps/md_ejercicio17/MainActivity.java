@@ -38,6 +38,10 @@ public class MainActivity extends AppCompatActivity implements DatePickerDialog.
 
                 datePickerDialog = DatePickerDialog.newInstance(MainActivity.this, currentyYear,currentMonth,currentDate);
 
+                datePickerDialog.setAccentColor(getResources().getColor(R.color.colorPrimary));
+
+
+
                 datePickerDialog.show(getFragmentManager(),"datePickerID");
 
                 finalPicker = (DatePickerDialog) getFragmentManager().findFragmentByTag("datePickerID");
